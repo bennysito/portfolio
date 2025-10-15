@@ -1,0 +1,201 @@
+body{
+    background-color:white;
+}
+
+#nameHeader{
+    display:flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 2in;
+    margin-top: 0.3in;
+    font-family: "Arial";
+}
+
+#nameHeader img{
+    width:180px;
+    height:180px;
+    border-radius: 20px
+}
+
+#nameHeader img:hover{
+    width:180px;
+    height:180px;
+    border-radius: 20px;
+    content:url("../imageFiles/image2.png")
+}
+
+#nameHeader p{
+    line-height: 30px;
+}
+
+#nameInfo{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+#nameHeader button{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius:10px;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#nameHeader i {
+  margin-right: 8px;
+}
+
+
+#sendAMessage{
+    background-color: black;
+    color:white;
+}
+
+#sendEmail{
+    background-color: blue;
+    color:white;
+}
+
+#projectList{
+    background-color:rgb(251, 214, 6);
+    color:white;
+    box-shadow: 0 0 10px gold,
+                  0 0 20px #ffd700,
+                  0 0 40px #ffcc00,
+                  0 0 60px #ff9900;
+}
+
+#aboutMe{
+    display:flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 2in;
+    font-family: "Arial";
+    line-height:25px;
+}
+
+#aboutMe p{
+    font-size: 15px;
+}
+#aboutMeTxt{
+    display:flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0.3in;
+    font-weight:bold;
+    font-size: 20px
+}
+
+#educationMe{
+    display:absolute;
+    float:right;
+    margin-top: -350px;
+    font-family: "Arial";
+    font-size: 15px;
+}
+
+#educationTxt{
+    display:flex;
+    align-items: flex-start;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+#techStack{
+    margin-left: 2in;
+    margin-top: 0.3in;
+    font-family: "Arial";
+    font-size: 15px;
+}
+
+#techStackTxt{
+    display:flex;
+    align-items: flex-start;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+#contactMeForms{
+    display:flex;
+    align-items: flex-start;
+    margin-left: 5in;
+    font-family: "Arial";
+    line-height:25px;    
+}
+
+#contactMeForms input{
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius:10px;
+    font-weight:bold;
+    text-align:center;
+    font-size: 15px;
+}
+
+#contactMeForms #message{
+    width: 500px;
+    height: 300px;
+}
+
+#contactMeForms h1{
+    text-align:center;
+    font-family: "Arial";
+}
+
+#formSubmitBtn{
+    display: block;   
+    margin: 0 auto; 
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    color:rgb(174, 170, 170);
+    cursor: pointer;
+    margin-left: 230px;
+    font-weight:bold;
+}
+
+#projectsAndContributions h1{
+    text-align: center;
+    font-family: "Arial";
+}
+
+#project{
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+
+#project p{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#projectsAndContributions button{
+    display: block;    
+    margin-top: 20px;
+    color:rgb(174, 170, 170);
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-weight:bold;
+    background-color: transparent;
+    margin-left: 7.3in;
+}
+
+#moreBtn{
+    margin-right: 10000px;
+}
