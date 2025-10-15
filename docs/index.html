@@ -4,93 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-<link rel = "stylesheet" href = "style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <button id="darkMode" onclick = "darkMode()"><i class="fa-solid fa-gear"></i></button>
-    <div id = "nameHeader">
-        <img src = "imageFiles/img.png"  id = "myPicture" alt = "jamesPic">
-        <p><span id = "nameInfo">James Benedict C. Arnoco </span><br>
-        <i class="fa-solid fa-location-dot"></i>Cebu, Philippines <br>
-        <i class="fa-solid fa-laptop-code"></i>Aspiring Software Engineer<br>
-        <button type = "submit" id="sendAMessage" ><i class="fa-solid fa-phone"></i> Schedule a call </button>
-        <button type = "submit" id="sendEmail"><i class="fa-solid fa-arrow-right"> </i>Send email</i> </button>
-        <button type = "submit" id="projectList"><i class="fa-solid fa-list"></i> Projects & Contributions</i></button>
+    <button id="darkMode" onclick="darkMode()"><i class="fa-solid fa-gear"></i></button>
+
+    <div id="nameHeader">
+        <img src="imageFiles/img.png" id="myPicture" alt="jamesPic">
+        <p>
+            <span id="nameInfo">James Benedict C. Arnoco</span><br>
+            <i class="fa-solid fa-location-dot"></i>Cebu, Philippines <br>
+            <i class="fa-solid fa-laptop-code"></i>Aspiring Software Engineer<br>
+            <button type="submit" id="sendAMessage"><i class="fa-solid fa-phone"></i> Schedule a call</button>
+            <button type="submit" id="sendEmail"><i class="fa-solid fa-arrow-right"></i> Send email</button>
+            <button type="submit" id="projectList"><i class="fa-solid fa-list"></i> Projects & Contributions</button>
         </p>
     </div>
 
     <div id="aboutMe">
         <p>
-        <span id="aboutMeTxt">About Me</span>
-        I am a passionate and driven student currently pursuing my path to become a Full Stack Developer and AI <br>
-        Engineer. With a strong foundation in programming and problem-solving, I am dedicated to building<br>
-        innovative, efficient, and impactful solutions that merge technology with real-world applications.<br>
-        <br>
+            <span id="aboutMeTxt">About Me</span>
+            I am a passionate and driven student currently pursuing my path to become a Full Stack Developer and AI <br>
+            Engineer. With a strong foundation in programming and problem-solving, I am dedicated to building<br>
+            innovative, efficient, and impactful solutions that merge technology with real-world applications.<br><br>
 
-        Beyond personal growth, I aspire to serve a greater purpose by contributing my skills as part of the IT<br>
-        personnel in the Armed Forces or Government sector. My vision is to leverage advanced technologies—<br>
-        such as web development, artificial intelligence, and data-driven systems—to strengthen digital<br>
-        infrastructures, enhance security, and support nation-building.<br>
-        <br>
+            Beyond personal growth, I aspire to serve a greater purpose by contributing my skills as part of the IT<br>
+            personnel in the Armed Forces or Government sector. My vision is to leverage advanced technologies—<br>
+            such as web development, artificial intelligence, and data-driven systems—to strengthen digital<br>
+            infrastructures, enhance security, and support nation-building.<br><br>
 
-        I thrive on continuous learning, adaptability, and collaboration. Whether developing scalable applications,<br>
-        exploring machine learning models, or contributing to mission-critical systems, I am committed to using<br>
-        technology as a tool for both innovation and service.<br>
-        </p>        
+            I thrive on continuous learning, adaptability, and collaboration. Whether developing scalable applications,<br>
+            exploring machine learning models, or contributing to mission-critical systems, I am committed to using<br>
+            technology as a tool for both innovation and service.<br>
+        </p>
     </div>
 
     <div id="educationMe">
         <p>
-        <span id="educationTxt">Education</span> <br>
-        Tejero Elementary School (2012 - 2018)
-            <ul>
-                <li>With Honors</li>
-            </ul>
-        Tejero National High School (2018 - 2022)
-            <ul>
-                <li>With Honors</li>
-            </ul>
-        Asian College of Technology - (IEF 2022 - 2024)
-            <ul>
-                <li>With High Honors</li>
-            </ul>
-         Cebu Technological University - Main Campus (2024)
-            <ul>
-                <li>On Going</li>
-            </ul>       
-        </p>           
+            <span id="educationTxt">Education</span> <br>
+            Tejero Elementary School (2012 - 2018)
+            <ul><li>With Honors</li></ul>
+            Tejero National High School (2018 - 2022)
+            <ul><li>With Honors</li></ul>
+            Asian College of Technology - (IEF 2022 - 2024)
+            <ul><li>With High Honors</li></ul>
+            Cebu Technological University - Main Campus (2024)
+            <ul><li>On Going</li></ul>
+        </p>
     </div>
 
     <div id="techStack">
         <p>
-        <span id="techStackTxt">Tech Stack</span> <br>
-        C Language
-            <ul>
-                <li>I learned the basic fundamentals of C programming during my first year in college, which gave me a strong foundation in coding and problem-solving.</li>
-            </ul>
-        Java 
-            <ul>
-                <li>Right after learning C, I studied the basics of Java, which helped me understand object-oriented programming and build on my programming foundation.</li>
-            </ul>
-        </p>           
+            <span id="techStackTxt">Tech Stack</span> <br>
+            C Language
+            <ul><li>I learned the basic fundamentals of C programming during my first year in college, which gave me a strong foundation in coding and problem-solving.</li></ul>
+            Java
+            <ul><li>Right after learning C, I studied the basics of Java, which helped me understand object-oriented programming and build on my programming foundation.</li></ul>
+        </p>
     </div>
 
-    <section id = "projectsAndContributions">
+    <section id="projectsAndContributions">
         <h1>Projects and Contributions</h1>
-        <div id = "project"></div>
-        <div id = "project"></p></div>
-        <div id = "project"></div>
-        <button type = "submit"> More </button>
+
+        <div id="project" class="project1">
+            <h2>Color Box Project</h2>
+            <p>A simple JavaScript project where you can change the color of a box with one click.</p>
+            <button onclick="window.location.href='colorbox.html'">View Project</button>
+        </div>
+
+        <div id="project"></div>
+        <div id="project"></div>
+
+        <button type="submit" id = "moreBtn">More</button>
     </section>
-    <div id = "contactMeForms">
-        <forms>
+
+    <div id="contactMeForms">
+        <form>
             <h1>Contact Me</h1>
-            <input type = "text" placeholder = "Subject " required><br>
-            <input type = "text" placeholder = "Write a message " id = "message" required><br>
-            <button type = "submit" id="formSubmitBtn">Submit</button>
-        </forms>
-    </div> 
-    <script src = "script.js"></script>
+            <input type="text" placeholder="Subject" required><br>
+            <input type="text" placeholder="Write a message" id="message" required><br>
+            <button type="submit" id="formSubmitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src = "script.js">
+    </script>
 </body>
 </html>

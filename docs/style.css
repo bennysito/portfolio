@@ -1,9 +1,9 @@
-body{
-    background-color:white;
+body {
+    background-color: white;
 }
 
-#nameHeader{
-    display:flex;
+#nameHeader {
+    display: flex;
     align-items: flex-start;
     gap: 1rem;
     margin-left: 2in;
@@ -11,191 +11,254 @@ body{
     font-family: "Arial";
 }
 
-#nameHeader img{
-    width:180px;
-    height:180px;
-    border-radius: 20px
-}
-
-#nameHeader img:hover{
-    width:180px;
-    height:180px;
+#nameHeader img {
+    width: 180px;
+    height: 180px;
     border-radius: 20px;
-    content:url("imageFiles/image2.png")
 }
 
-#nameHeader p{
+#nameHeader img:hover {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    content: url("imageFiles/image2.png");
+}
+
+#nameHeader p {
     line-height: 30px;
 }
 
-#nameInfo{
+#nameInfo {
     font-size: 25px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-#nameHeader button{
+#nameHeader button {
     width: 200px;
     height: 30px;
     margin-top: 10px;
-    border-radius:10px;
-    border:none;
-    font-weight:bold;
-    cursor:pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #nameHeader i {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 
-
-#sendAMessage{
+#sendAMessage {
     background-color: black;
-    color:white;
+    color: white;
 }
 
-#sendEmail{
+#sendEmail {
     background-color: blue;
-    color:white;
+    color: white;
 }
 
-#projectList{
-    background-color:rgb(251, 214, 6);
-    color:white;
+#projectList {
+    background-color: rgb(251, 214, 6);
+    color: white;
     box-shadow: 0 0 10px gold,
-                  0 0 20px #ffd700,
-                  0 0 40px #ffcc00,
-                  0 0 60px #ff9900;
+                0 0 20px #ffd700,
+                0 0 40px #ffcc00,
+                0 0 60px #ff9900;
 }
 
-#aboutMe{
-    display:flex;
+#aboutMe {
+    display: flex;
     align-items: flex-start;
     gap: 1rem;
     margin-left: 2in;
     font-family: "Arial";
-    line-height:25px;
+    line-height: 25px;
 }
 
-#aboutMe p{
+#aboutMe p {
     font-size: 15px;
 }
-#aboutMeTxt{
-    display:flex;
+
+#aboutMeTxt {
+    display: flex;
     align-items: flex-start;
     gap: 1rem;
     margin-top: 0.3in;
-    font-weight:bold;
-    font-size: 20px
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#educationMe{
-    display:absolute;
-    float:right;
+#educationMe {
+    display: absolute;
+    float: right;
     margin-top: -350px;
     font-family: "Arial";
     font-size: 15px;
 }
 
-#educationTxt{
-    display:flex;
+#educationTxt {
+    display: flex;
     align-items: flex-start;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 20px;
 }
 
-#techStack{
+#techStack {
     margin-left: 2in;
     margin-top: 0.3in;
     font-family: "Arial";
     font-size: 15px;
 }
 
-#techStackTxt{
-    display:flex;
+#techStackTxt {
+    display: flex;
     align-items: flex-start;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 20px;
 }
 
-#contactMeForms{
-    display:flex;
+#contactMeForms {
+    display: flex;
     align-items: flex-start;
     margin-left: 5in;
     font-family: "Arial";
-    line-height:25px;    
+    line-height: 25px;
 }
 
-#contactMeForms input{
+#contactMeForms input {
     width: 500px;
     height: 30px;
     margin-top: 10px;
-    border-radius:10px;
-    font-weight:bold;
-    text-align:center;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
     font-size: 15px;
 }
 
-#contactMeForms #message{
+#contactMeForms #message {
     width: 500px;
     height: 300px;
 }
 
-#contactMeForms h1{
-    text-align:center;
-    font-family: "Arial";
-}
-
-#formSubmitBtn{
-    display: block;   
-    margin: 0 auto; 
-    margin-top: 20px;
-    background-color: transparent;
-    border-radius: 10px;
-    border: none;
-    width: 80px;
-    height: 30px;
-    color:rgb(174, 170, 170);
-    cursor: pointer;
-    margin-left: 230px;
-    font-weight:bold;
-}
-
-#projectsAndContributions h1{
+#contactMeForms h1 {
     text-align: center;
     font-family: "Arial";
 }
 
-#project{
-    display: inline-block;
-    width: 400px;
-    height: 300px;
-    margin: 10px;
-    background-color: #ffffff;
-    border: 2px solid;
-    margin-left: 70px;
-    border-radius: 10px;
-}
-
-#project p{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-#projectsAndContributions button{
-    display: block;    
+#formSubmitBtn {
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
-    color:rgb(174, 170, 170);
+    background-color: transparent;
     border-radius: 10px;
     border: none;
     width: 80px;
     height: 30px;
+    color: rgb(174, 170, 170);
     cursor: pointer;
-    font-weight:bold;
-    background-color: transparent;
-    margin-left: 7.3in;
+    margin-left: 230px;
+    font-weight: bold;
 }
 
-#moreBtn{
-    margin-right: 10000px;
+#projectsAndContributions h1 {
+    margin-bottom: 30px;
+    margin-left: 6in;
+}
+
+#projectsAndContributions > #project,
+#projectsAndContributions > .project1 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    vertical-align: top;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-left: 100px;
+}
+
+#projectsAndContributions > #project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+#projectsAndContributions > #project button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#projectsAndContributions > #project button:hover {
+    background-color: #0056b3;
+}
+
+#projectsAndContributions > #project,
+#projectsAndContributions > .project1 {
+    display: inline-block;
+}
+
+#moreBtn {
+    display: block;
+    margin: 30px auto;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#colorBoxSection {
+    margin-top: 80px;
+}
+
+#colorBoxSection h1 {
+    margin-bottom: 10px;
+    color: #333;
+    margin-left: 6.6in;
+}
+
+#colorBoxSection p {
+    color: #666;
+    margin-bottom: 25px;
+    margin-left: 6.6in;
+}
+
+#colorBox {
+    width: 200px;
+    height: 200px;
+    background-color: #007bff;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#colorBox:hover {
+    transform: scale(1.05);
+}
+
+#colorBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    margin-left: 7.2in;
+}
+
+#colorBtn:hover {
+    background-color: #0056b3;
 }

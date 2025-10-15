@@ -10,3 +10,16 @@ function darkMode(){
     }
 }
 
+let isBlue = true;
+
+function changeColor() {
+    const box = document.getElementById("colorBox");
+
+    if (isBlue) {
+        box.style.backgroundColor = "black";
+    } else {
+        box.style.backgroundColor = "blue";
+    }
+
+    isBlue = !isBlue; // Toggle state
+}
