@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Box Project</title>
+    <title>Color Box Project - James Benedict C. Arnoco</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="colorBoxSection">
-        <h1>Color Box Project</h1>
-        <p>Click the button to change the box color!</p>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
 
-        <div id="colorBox"></div>
-        <button id="colorBtn" onclick="changeColor()">Change Color</button>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Back to Portfolio</a></li>
+            <li><a href="#colorBoxSection">Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Color Box Section -->
+    <section id="colorBoxSection" class="section">
+        <h1>Color Box Project</h1>
+        <p>Click the button below to change the box color! This is a simple JavaScript demo showcasing DOM manipulation.</p>
+        
+        <div id="colorBox" aria-label="Color-changing box"></div>
+        <div class="button-group">
+            <button id="colorBtn" onclick="changeColor()">Change Color</button>
+            <button id="resetBtn" onclick="resetColor()">Reset to Blue</button>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 James Benedict C. Arnoco. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

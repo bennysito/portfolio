@@ -100,9 +100,16 @@ document.querySelectorAll('#navbar a').forEach(anchor => {
     });
 });
 
-// Color Box Project Function (for colorbox.html)
+// Color Box Project Function (for colorbox.html) - Updated to randomize color
 function changeColor() {
     const box = document.getElementById('colorBox');
-    const isBlue = box.style.backgroundColor === 'rgb(0, 123, 255)'; // #007bff
-    box.style.backgroundColor = isBlue ? 'black' : '#007bff';
+    // Generate a random hex color
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    box.style.backgroundColor = randomColor;
+}
+
+// Reset Color Function (for colorbox.html)
+function resetColor() {
+    const box = document.getElementById('colorBox');
+    box.style.backgroundColor = '#007bff'; // Reset to blue
 }

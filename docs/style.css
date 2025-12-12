@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #007bff;
+    --primary-color: #0b1d60;
     --secondary-color: #f8f9fa;
     --text-color: #333;
     --dark-bg: #121212;
@@ -312,6 +312,56 @@ footer {
 
 #backToTop.visible {
     opacity: 1;
+}
+
+/* Color Box Section (for colorbox.html) */
+#colorBoxSection {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#colorBoxSection h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#colorBoxSection p {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+#colorBox {
+    width: 200px;
+    height: 200px;
+    background-color: #007bff; /* Starts as blue */
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer; /* Optional: Makes it clear it's interactive */
+}
+
+#colorBox:hover {
+    transform: scale(1.05);
+}
+
+#colorBtn, #resetBtn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    margin: 0 10px;
+}
+
+#colorBtn:hover, #resetBtn:hover {
+    background-color: #0056b3;
 }
 
 /* Media Queries */
