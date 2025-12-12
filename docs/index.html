@@ -3,92 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>James Benedict C. Arnoco - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="darkMode" onclick="darkMode()"><i class="fa-solid fa-gear"></i></button>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
 
-    <div id="nameHeader">
-        <img src="imageFiles/img.png" id="myPicture" alt="jamesPic">
-        <p>
-            <span id="nameInfo">James Benedict C. Arnoco</span><br>
-            <i class="fa-solid fa-location-dot"></i>Cebu, Philippines <br>
-            <i class="fa-solid fa-laptop-code"></i>Aspiring Software Engineer<br>
-            <button type="submit" id="sendAMessage"><i class="fa-solid fa-phone"></i> Schedule a call</button>
-            <button type="submit" id="sendEmail"><i class="fa-solid fa-arrow-right"></i> Send email</button>
-            <button type="submit" id="projectList"><i class="fa-solid fa-list"></i> Projects & Contributions</button>
-        </p>
-    </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div id="aboutMe">
-        <p>
-            <span id="aboutMeTxt">About Me</span>
-            I am a passionate and driven student currently pursuing my path to become a Full Stack Developer and AI <br>
-            Engineer. With a strong foundation in programming and problem-solving, I am dedicated to building<br>
-            innovative, efficient, and impactful solutions that merge technology with real-world applications.<br><br>
-
-            Beyond personal growth, I aspire to serve a greater purpose by contributing my skills as part of the IT<br>
-            personnel in the Armed Forces or Government sector. My vision is to leverage advanced technologies—<br>
-            such as web development, artificial intelligence, and data-driven systems—to strengthen digital<br>
-            infrastructures, enhance security, and support nation-building.<br><br>
-
-            I thrive on continuous learning, adaptability, and collaboration. Whether developing scalable applications,<br>
-            exploring machine learning models, or contributing to mission-critical systems, I am committed to using<br>
-            technology as a tool for both innovation and service.<br>
-        </p>
-    </div>
-
-    <div id="educationMe">
-        <p>
-            <span id="educationTxt">Education</span> <br>
-            Tejero Elementary School (2012 - 2018)
-            <ul><li>With Honors</li></ul>
-            Tejero National High School (2018 - 2022)
-            <ul><li>With Honors</li></ul>
-            Asian College of Technology - (IEF 2022 - 2024)
-            <ul><li>With High Honors</li></ul>
-            Cebu Technological University - Main Campus (2024)
-            <ul><li>On Going</li></ul>
-        </p>
-    </div>
-
-    <div id="techStack">
-        <p>
-            <span id="techStackTxt">Tech Stack</span> <br>
-            C Language
-            <ul><li>I learned the basic fundamentals of C programming during my first year in college, which gave me a strong foundation in coding and problem-solving.</li></ul>
-            Java
-            <ul><li>Right after learning C, I studied the basics of Java, which helped me understand object-oriented programming and build on my programming foundation.</li></ul>
-        </p>
-    </div>
-
-    <section id="projectsAndContributions">
-        <h1>Projects and Contributions</h1>
-
-        <div id="project" class="project1">
-            <h2>Color Box Project</h2>
-            <p>A simple JavaScript project where you can change the color of a box with one click.</p>
-            <button onclick="window.location.href='colorbox.html'">View Project</button>
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div id="nameHeader">
+            <img src="imageFiles/img.png" id="myPicture" alt="James Benedict C. Arnoco - Profile Picture">
+            <div>
+                <h1 id="nameInfo">James Benedict C. Arnoco</h1>
+                <p><i class="fa-solid fa-location-dot"></i> Cebu, Philippines</p>
+                <p><i class="fa-solid fa-laptop-code"></i> Aspiring Software Engineer</p>
+                <div class="button-group">
+                    <button id="sendAMessage" onclick="alert('Scheduling a call...')"><i class="fa-solid fa-phone"></i> Schedule a Call</button>
+                    <button id="sendEmail" onclick="window.location.href='mailto:your.email@example.com'"><i class="fa-solid fa-envelope"></i> Send Email</button>
+                    <button id="projectList" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"><i class="fa-solid fa-list"></i> View Projects</button>
+                </div>
+            </div>
         </div>
-
-        <div id="project"></div>
-        <div id="project"></div>
-
-        <button type="submit" id = "moreBtn">More</button>
     </section>
 
-    <div id="contactMeForms">
-        <form>
-            <h1>Contact Me</h1>
-            <input type="text" placeholder="Subject" required><br>
-            <input type="text" placeholder="Write a message" id="message" required><br>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a passionate and driven student currently pursuing my path to become a Full Stack Developer and AI Engineer. With a strong foundation in programming and problem-solving, I am dedicated to building innovative, efficient, and impactful solutions that merge technology with real-world applications.<br><br>
+        Beyond personal growth, I aspire to serve a greater purpose by contributing my skills as part of the IT personnel in the Armed Forces or Government sector. My vision is to leverage advanced technologies—such as web development, artificial intelligence, and data-driven systems—to strengthen digital infrastructures, enhance security, and support nation-building.<br><br>
+        I thrive on continuous learning, adaptability, and collaboration. Whether developing scalable applications, exploring machine learning models, or contributing to mission-critical systems, I am committed to using technology as a tool for both innovation and service.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Tejero Elementary School (2012 - 2018)</h3>
+            <ul><li>With Honors</li></ul>
+        </div>
+        <div class="education-item">
+            <h3>Tejero National High School (2018 - 2022)</h3>
+            <ul><li>With Honors</li></ul>
+        </div>
+        <div class="education-item">
+            <h3>Asian College of Technology - IEF (2022 - 2024)</h3>
+            <ul><li>With High Honors</li></ul>
+        </div>
+        <div class="education-item">
+            <h3>Cebu Technological University - Main Campus (2024)</h3>
+            <ul><li>Ongoing</li></ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Tech Stack & Skills</h2>
+        <div class="skill">
+            <span>C Language</span>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            <p>I learned the basic fundamentals of C programming during my first year in college, which gave me a strong foundation in coding and problem-solving.</p>
+        </div>
+        <div class="skill">
+            <span>Java</span>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            <p>Right after learning C, I studied the basics of Java, which helped me understand object-oriented programming and build on my programming foundation.</p>
+        </div>
+        <!-- Add more skills as needed -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects & Contributions</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200?text=Project+Image" alt="Color Box Project">
+                <h3>Color Box Project</h3>
+                <p>A simple JavaScript project where you can change the color of a box with one click.</p>
+                <button onclick="window.open('colorbox.html', '_blank')">View Project</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="https://via.placeholder.com/300x200?text=Project+Image" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of another project.</p>
+                <button>View Project</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="https://via.placeholder.com/300x200?text=Project+Image" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of another project.</p>
+                <button>View Project</button>
+            </div>
+        </div>
+        <button id="loadMoreBtn">Load More Projects</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" placeholder="Write a message" required></textarea>
             <button type="submit" id="formSubmitBtn">Submit</button>
         </form>
-    </div>
+        <div id="formMessage"></div>
+    </section>
 
-    <script src = "script.js">
-    </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 James Benedict C. Arnoco. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
